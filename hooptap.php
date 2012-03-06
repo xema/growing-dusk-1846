@@ -12,7 +12,7 @@ $l=$_GET['url'];
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Reto Createsse Hooptap</title>
 </head>
-
+<script> document.onload = parent.window.location = 'http://www.hooptap.com'; </script>
 <body style="margin:0; padding:0; ">
          	
  			<a style="padding:0 0 0 0;" href="http://hooptap.com" target="blank"/><img src="images/logo_oficial.jpg" alt="" />  </a>   
