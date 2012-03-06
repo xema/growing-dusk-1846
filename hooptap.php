@@ -14,7 +14,6 @@ $l=$_GET['url'];
 </head>
 
 <body style="margin:0; padding:0; ">
-<CENTER>
          	
  			<a style="padding:0 0 0 0;" href="http://hooptap.com" target="blank"/><img src="images/logo_oficial.jpg" alt="" />  </a>   
          <div style="clear:both;"></div>
@@ -53,7 +52,6 @@ foreach ($con as $val) {
 
 </ul>
 </div >
-</CENTER>
 
 </body>
 </html>
