@@ -4,35 +4,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Reto Createsse Hooptap</title>
 </head>
-<body style="margin:0; padding:0;">
 
-<div style="margin:0; padding:0; width:520px; height:630px; background:#ffffff 	url(http://176.34.252.128/preview/fb/createsse/images/CREATESSE.png) no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
+<body style="margin:0; padding:0; width:520;">
+
+<div style="margin:0; padding:0; width:520px; height:320px; background:#ffffff 	url(http://176.34.252.128/preview/fb/hooptap_foto/images/FACEBOOK.jpg) no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
         	
-            <div style="padding:211px 0 0 90px;">
-			<a href="http://itunes.apple.com/es/app/hooptap/id465650148?mt=8" target="blank"><img  src="http://176.34.252.128/preview/fb/createsse/images/HoopTap-AppleStore.png"    alt="" /></a><br />
-			<a style="padding:0 0 0 0;" href="https://market.android.com/details?id=com.bervimo.Hooptap&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5iZXJ2aW1vLkhvb3B0YXAiXQ.." target="blank"><img  src="http://176.34.252.128/preview/fb/createsse/images/HoopTap-Android.png"    alt="" /></a>
-	    </div>
+            
         <div style="clear:both;"></div>
 </div>
 
 
-
-<div style="width:180px; float:left;">
-<ul>
+<div style="width:520px;">
+<div style="background-image:url(images/fondo_sup.jpg); width:520px; height:24px; display:block"></div>
+<div style="width:520px; display:block; background-image:url(images/fondo_centro.jpg); background-repeat: repeat-y;">
+<div style="width: 150px; float: left; margin-left: 20px;">
+<ul style=" padding-left: 5px;">
 <?php
 
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/createsse/listnofb.php');
+$contents = file_get_contents('http://prod.hooptap.com/preview/fb/hooptap_foto/listnofb.php');
 $con=json_decode($contents);
  
 $c = count($con);
 
-$s = ($c / 1); // change 3 to the number of columns you want to have.
+$s = ($c / 3); // change 3 to the number of columns you want to have.
 $aux=0;
 foreach ($con as $val) {
       $aux+=1;
-    echo '<table border="0"> <tr><td><img src="' . $val->url . '" width="380" height="320"/></td></tr>'
-    .'<tr align="center"><td ><table><tr><td>'.$val->nombre
-	.'<iframe src="//www.facebook.com/plugins/like.php?href=http://hooptap.com/fb/createsse/grid.php?id='.$aux.'&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21&amp;appId=360540313963881" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>'
+    echo '<table width="150" border="0" cellspacing="0" cellpadding="0"> <tr><td"><img src="' . $val->url . '" width="125" height="125"/></td></tr>'
+    .'<tr align="center"><td ><table><tr><td><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">Subida por: <span style="overflow:hidden; color: #945836; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 125px;">'.$val->nombre
+	.'</span></p><iframe src="//www.facebook.com/plugins/like.php?href=http://hooptap.com/fb/hooptap_foto/grid.php?id='.$aux.'&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21&amp;appId=360540313963881" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px; margin-bottom: 5px;" allowTransparency="true"></iframe>'
 .'</td></tr></table></td></tr>'
     .'</table>';
     if($i != 0 && $i % $s == 0)
@@ -40,8 +40,8 @@ foreach ($con as $val) {
         ?>
         </ul>
         </div>
-        <div style="width:150px; float:left;  ">
-        <ul>
+       <div style="width: 150px; float: left; margin-left: 20px;">
+        <ul style=" padding-left: 5px;">
         <?php
     }
     $i++;
@@ -51,7 +51,11 @@ foreach ($con as $val) {
 
 </ul>
 </div >
+<div style="clear:both;"></div>
+</div>
+<div style="background-image:url(images/fondo_infe.jpg); width:520px; height:24px; display:block"></div>
 
+</div>
 
 </body>
 </html>
