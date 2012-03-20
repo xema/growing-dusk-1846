@@ -5,7 +5,7 @@
 <title>Reto Createsse Hooptap</title>
 </head>
 
-<body style="margin:0; padding:0; width:520;">
+<body style="margin:0; padding:0; width:500;">
 
 <div style="margin:0; padding:0; width:520px; height:320px; background:#ffffff 	url(http://growing-dusk-1846.herokuapp.com/images/omexpo.jpg) no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
         	
@@ -14,9 +14,9 @@
 </div>
 
 
-<div style="width:520px;">
-<div style="background-image:url(images/fondo_sup.jpg); width:520px; height:24px; display:block"></div>
-<div style="width:520px; display:block; background-image:url(images/fondo_centro.jpg); background-repeat: repeat-y;">
+<div style="width:500px;">
+<div style="background-image:url(images/fondo_sup.jpg); width:500px; height:24px; display:block"></div>
+<div style="width:500px; display:block; background-image:url(images/fondo_centro.jpg); background-repeat: repeat-y;">
 <div style="width: 150px; float: left; margin-left: 20px;">
 <ul style=" padding-left: 5px;">
 <?php
@@ -53,7 +53,7 @@ foreach ($con as $val) {
 </div >
 <div style="clear:both;"></div>
 </div>
-<div style="background-image:url(images/fondo_infe.jpg); width:520px; height:24px; display:block"></div>
+<div style="background-image:url(images/fondo_infe.jpg); width:500px; height:24px; display:block"></div>
 
 </div>
 
