@@ -7,7 +7,7 @@
 
 <body style="margin:0; padding:0; width:520;">
 
-<div style="margin:0; padding:0; width:520px; height:320px; background:#ffffff  src:'./images/omexpo.jpg' no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
+<div style="margin:0; padding:0; width:520px; height:320px; background:#ffffff 	url(http://growing-dusk-1846.herokuapp.com/images/omexpo.jpg) no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
         	
             
         <div style="clear:both;"></div>
@@ -21,7 +21,7 @@
 <ul style=" padding-left: 5px;">
 <?php
 
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
+$contents = file_get_contents('http://prod.hooptap.com/preview/fb/hooptap_foto/listnofb.php');
 $con=json_decode($contents);
  
 $c = count($con);
@@ -31,9 +31,9 @@ $aux=0;
 foreach ($con as $val) {
       $aux+=1;
     echo '<table width="150" border="0" cellspacing="0" cellpadding="0"> <tr><td"><img src="' . $val->url . '" width="125" height="125"/></td></tr>'
-    .'<tr align="center"><td ><table><tr><td><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">Subida por: <span style="overflow:hidden; color: #945836; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 125px;">'.$val->nombre
-	.'</span></p>
-.'</td></tr></table></td></tr>'
+    	.'<tr align="center"><td ><table><tr><td><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">Subida por: <span style="overflow:hidden; color: #945836; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 125px;">'.$val->nombre
+	.'</span></p>'
+	.'</td></tr></table></td></tr>'
     .'</table>';
     if($i != 0 && $i % $s == 0)
     {
