@@ -15,7 +15,7 @@
 
 
 <div style="width:500px;">
-<div style="background-image:url(images/fondo_sup.jpg); width:500px; height:24px; display:block"></div>
+<div style="background-image:url(images/fondo_sup.jpg); width:500px; height:20px; display:block"></div>
 <div style="width:500px; display:block; background-image:url(images/fondo_centro.jpg); background-repeat: repeat-y;">
 <div style="width: 150px; float: left; margin-left: 10px;">
 <ul style=" padding-left: 2px;">
