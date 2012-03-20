@@ -20,7 +20,7 @@
 <ul style=" padding-left: 2px;">
 <?php
 
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/hooptap_foto/listnofb.php');
+$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
 $con=json_decode($contents);
  
 $c = count($con);
