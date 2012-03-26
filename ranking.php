@@ -9,7 +9,7 @@
 		.avatar-wrap{width:100px;height:100px;border-radius:100px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
 		 
 		.box{border-radius:75px;position:relative;z-index:1; background-color:#01A9DB;}
- 		.box-wrap{width:480px;height:800px;border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
+ 		.box-wrap{width:480px; border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
 	</style>
 	<!-- 		.box{border-radius:75px;position:relative;z-index:1; background-image:url(./images/ios-linen.jpg); background-repeat:repeat;}
 	 -->
@@ -92,7 +92,7 @@ foreach ($con as $val) {
 
 </ul>
 
-<div style="clear:both;"><br></br></div>
+<div style="clear:both;"> </div>
  
 </div >
 </body>
