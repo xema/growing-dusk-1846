@@ -18,7 +18,7 @@
 </head>
 <body>
 <div style="margin:0; padding:0; width:480px;" align="center" class="box box-480 box-wrap">
- 
+  
  
 <br> 
   <a style="font-family: Happy Monkey; font-size:35px; color:#FBF8EF"> Ranking Reto Buzz</a>
