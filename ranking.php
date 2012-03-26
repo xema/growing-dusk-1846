@@ -10,18 +10,18 @@
 .avatar-wrap{width:125px;height:125px;border-radius:125px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
  
 .box{border-radius:75px;position:relative;z-index:1; background-image:url(http://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-9/images/brushed_alu.png); background-repeat:repeat;}
-.box-wrap{width:525px;height:800px;border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
+.box-wrap{width:500px;height:800px;border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
   
   </style>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Reto Hooptap</title>
 </head>
-<body style="margin:0; padding:0; width:520;" >
-<div style="margin:0; padding:0; width:520px;" align="center" class="box box-520 box-wrap">
+<body style="margin:0; padding:0; width:500;" >
+<div style="margin:0; padding:0; width:500px;" align="center" class="box box-500 box-wrap">
  
  <!-- 
-<div style="margin:0; padding:0; width:520px; height:320px; background:#ffffff 	url(http://176.34.252.128/preview/fb/hooptap_foto/images/FACEBOOK.jpg) no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
+<div style="margin:0; padding:0; width:500px; height:320px; background:#ffffff 	url(http://176.34.252.128/preview/fb/hooptap_foto/images/FACEBOOK.jpg) no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
        <div style="clear:both;"></div>
 </div> -->
   <a style="font-family: Happy Monkey, cursive; font-size:45px; color:#0489B1"> Ranking Reto </a>  <a style="font-family: Yellowtail, cursive; font-size:50px; color:#0489B1;">Buzz</a>
