@@ -5,6 +5,10 @@
 <link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 <style type="text/css">
+@font-face {
+	font-family: cool_font;
+	src: url('css/AIRSTREA.ttf');
+}
  
 .avatar{border-radius:125px;position:relative;z-index:1}
 .avatar-wrap{width:125px;height:125px;border-radius:125px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}

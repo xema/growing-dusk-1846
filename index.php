@@ -1,43 +1,84 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Reto Createsse Hooptap</title>
+	<link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		.avatar{border-radius:100px;position:relative;z-index:1}
+		.avatar-wrap{width:100px;height:100px;border-radius:100px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
+		 
+		.box{border-radius:75px;position:relative;z-index:1; background-color:#01A9DB;}
+ 		.box-wrap{width:480px;height:800px;border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
+	</style>
+	<!-- 		.box{border-radius:75px;position:relative;z-index:1; background-image:url(./images/ios-linen.jpg); background-repeat:repeat;}
+	 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Reto Hooptap</title>
 </head>
+<body>
+<div style="margin:0; padding:0; width:480px;" align="center" class="box box-480 box-wrap">
+ 
+ 
+<br> 
+  <a style="font-family: Happy Monkey; font-size:35px; color:#FBF8EF"> Ranking Reto Buzz</a>
+  <br>
+<a style="font-family: Happy Monkey; font-size:30px; color:#FBF8EF" >Hooptap</img></a>
 
-<body style="margin:0; padding:0; width:520;">
-
-<div style="margin:0; padding:0; width:520px; height:320px; background:#ffffff 	url(http://176.34.252.128/preview/fb/hooptap_foto/images/FACEBOOK.jpg) no-repeat left top; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF;">
-        	
-            
-        <div style="clear:both;"></div>
-</div>
-
-
-<div style="width:520px;">
-<div style="background-image:url(images/fondo_sup.jpg); width:520px; height:24px; display:block"></div>
-<div style="width:520px; display:block; background-image:url(images/fondo_centro.jpg); background-repeat: repeat-y;">
-<div style="width: 150px; float: left; margin-left: 20px;">
 <ul style=" padding-left: 5px;">
 <?php
 
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/hooptap_foto/listnofb.php');
+$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking_buzz/listnofb.php');
 $con=json_decode($contents);
  
 $c = count($con);
 
-$s = ($c / 3); // change 3 to the number of columns you want to have.
+$s = ($c / 1); // change 3 to the number of columns you want to have.
 $aux=0;
 foreach ($con as $val) {
+
       $aux+=1;
-    echo '<table width="150" border="0" cellspacing="0" cellpadding="0"> <tr><td"><img src="' . $val->url . '" width="125" height="125"/></td></tr>'
-    .'<tr align="center"><td ><table><tr><td><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">Subida por: <span style="overflow:hidden; color: #945836; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 125px;">'.$val->nombre
-	.'</span></p><iframe src="//www.facebook.com/plugins/like.php?href=http://hooptap.com/fb/hooptap_foto/grid.php?id='.$aux.'&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21&amp;appId=360540313963881" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px; margin-bottom: 5px;" allowTransparency="true"></iframe>'
-.'</td></tr></table></td></tr>'
-    .'</table>';
+      if($val->url != "")
+      {
+    echo '<table width="480" border="0" cellspacing="0" cellpadding="0">  '
+		    .'<tr><td width="15" align="right">'
+		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF">'.$aux.'.</a>'
+		    .'<td> '
+		    .' <td width="100"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/' 
+		    . $val->url .'.jpg" width="100" height="100"/>'
+		    .'</div><td >'
+		    . ' <td width="175">'
+		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF"> '.$val->nombre.' </a>'
+			.'</td> ' 
+			. ' <td width="85">'
+		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF">'
+		    .$val->mark
+		    .'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
+			.'</td> '
+		    .'</tr>'
+    	.'</table>';
+      }
+      else
+      {
+    echo '<table width="480" border="0" cellspacing="0" cellpadding="0">  '
+		    .'<tr><td width="15" align="right">'
+		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF;">'.$aux.'.</a>'
+		    .'<td> '
+		    .' <td width="100"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
+		    .'</div><td >'
+		    . ' <td width="175">'
+		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF;"> '.$val->nombre.' </a>'
+			.'</td> ' 
+			. ' <td width="85">'
+		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF;">'
+		    .$val->mark.'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
+			.'</td> '
+		    .'</tr>'
+    	.'</table>';
+      }
     if($i != 0 && $i % $s == 0)
     {
-        ?>
+?>
         </ul>
         </div>
        <div style="width: 150px; float: left; margin-left: 20px;">
@@ -50,12 +91,9 @@ foreach ($con as $val) {
 ?>
 
 </ul>
+
+<div style="clear:both;"><br></br></div>
+ 
 </div >
-<div style="clear:both;"></div>
-</div>
-<div style="background-image:url(images/fondo_infe.jpg); width:520px; height:24px; display:block"></div>
-
-</div>
-
 </body>
 </html>
