@@ -53,7 +53,9 @@ foreach ($con as $val) {
     .'<a style="font-family: Happy Monkey, cursive; font-size:20px; color:#0489B1"> '.$val->nombre.' </a>'
 	.'</td> ' 
 	. ' <td width="75">'
-    .'<a style="font-family: Chango, cursive; font-size:20px; color:#0489B1">'.$val->mark.'</a><a style="font-family: Happy Monkey, cursive; font-size:20px; color:#0489B1;"> puntos </a>'
+    .'<a style="font-family: Chango, cursive; font-size:20px; color:#0489B1">'
+.$val->mark
+.'</a><a style="font-family: Happy Monkey, cursive; font-size:14px; color:#0489B1;"> puntos </a>'
 		.'</td> '
 
     .'</tr>'
