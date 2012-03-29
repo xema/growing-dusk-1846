@@ -33,30 +33,30 @@ $con=json_decode($contents);
  
 $c = count($con);
 
-$s = ($c / 1); // change 3 to the number of columns you want to have.
+$s = ($c / 2); // change 3 to the number of columns you want to have.
 $aux=0;
 foreach ($con as $val) {
 
       $aux+=1;
       if($val->url != "")
       {
-    echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
+    echo '<table width="175" border="0" cellspacing="0" cellpadding="0">  '
 		    .' <td width="100"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/' 
 		    . $val->url .'.jpg" width="100" height="100"/>'
 		    .'</div><td >'
-		    . ' <td width="175">'
+		    .' <td width="75">'
 		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF"> '.$val->nombre.' </a>'
-			.'</td> ' 
+		    .'</td> ' 
 		    .'</tr>'
     	.'</table>';
       }
       else
       {
-    echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
+    echo '<table width="175" border="0" cellspacing="0" cellpadding="0">  '
 		    .'<tr>'
 		    .' <td width="100"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
 		    .'</div><td >'
-		    . ' <td width="175">'
+		    . ' <td width="75">'
 		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF;"> '.$val->nombre.' </a>'
 			.'</td> ' 
 		    .'</tr>'
