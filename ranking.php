@@ -9,7 +9,7 @@
 		.avatar-wrap{width:100px;height:100px;border-radius:100px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
 		 
 		.box{border-radius:75px;position:relative;z-index:1; background-color:#01A9DB;}
- 		.box-wrap{width:480px; border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
+ 		.box-wrap{width:750px; border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
 	</style>
 	<!-- 		.box{border-radius:75px;position:relative;z-index:1; background-image:url(./images/ios-linen.jpg); background-repeat:repeat;}
 	 -->
@@ -17,7 +17,7 @@
 	<title>Reto Hooptap</title>
 </head>
 <body>
-<div style="margin:0; padding:0; width:480px;" align="center" class="box box-480 box-wrap">
+<div style="margin:0; padding:0; width:750px;" align="center" class="box box-750 box-wrap">
   
  
 <br> 
@@ -40,7 +40,7 @@ foreach ($con as $val) {
       $aux+=1;
       if($val->url != "")
       {
-    echo '<table width="480" border="0" cellspacing="0" cellpadding="0">  '
+    echo '<table width="750" border="0" cellspacing="0" cellpadding="0">  '
 		    .'<tr><td width="15" align="right">'
 		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF">'.$aux.'.</a>'
 		    .'<td> '
