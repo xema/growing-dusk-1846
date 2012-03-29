@@ -41,38 +41,25 @@ foreach ($con as $val) {
       if($val->url != "")
       {
     echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
-		    .'<tr><td width="15" align="right">'
-		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF">'.$aux.'.</a>'
-		    .'<td> '
+		    .'<tr>'
 		    .' <td width="100"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/' 
 		    . $val->url .'.jpg" width="100" height="100"/>'
 		    .'</div><td >'
 		    . ' <td width="175">'
 		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF"> '.$val->nombre.' </a>'
 			.'</td> ' 
-			. ' <td width="85">'
-		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF">'
-		    .$val->mark
-		    .'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
-			.'</td> '
 		    .'</tr>'
     	.'</table>';
       }
       else
       {
     echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
-		    .'<tr><td width="15" align="right">'
-		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF;">'.$aux.'.</a>'
-		    .'<td> '
+		    .'<tr>'
 		    .' <td width="100"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
 		    .'</div><td >'
 		    . ' <td width="175">'
 		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF;"> '.$val->nombre.' </a>'
 			.'</td> ' 
-			. ' <td width="85">'
-		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF;">'
-		    .$val->mark.'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
-			.'</td> '
 		    .'</tr>'
     	.'</table>';
       }
