@@ -40,7 +40,7 @@ foreach ($con as $val) {
       $aux+=1;
       if($val->url != "")
       {
-    echo '<table width="750" border="0" cellspacing="0" cellpadding="0">  '
+    echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
 		    .'<tr><td width="15" align="right">'
 		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF">'.$aux.'.</a>'
 		    .'<td> '
@@ -60,7 +60,7 @@ foreach ($con as $val) {
       }
       else
       {
-    echo '<table width="750" border="0" cellspacing="0" cellpadding="0">  '
+    echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
 		    .'<tr><td width="15" align="right">'
 		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF;">'.$aux.'.</a>'
 		    .'<td> '
