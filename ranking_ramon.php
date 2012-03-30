@@ -51,9 +51,9 @@ foreach ($con as $val) {
 		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF"> '.$val->nombre.' </a>'
 			.'</td> ' 
 			. ' <td width="85">'
-		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF">'
-		    .$val->mark
-		    .'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
+ 			.'<a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> Cadena de </a><br>'
+		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF;">'
+		    .$val->mark.'</a>'
 			.'</td> '
 		    .'</tr>'
     	.'</table>';
@@ -70,8 +70,9 @@ foreach ($con as $val) {
 		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF;"> '.$val->nombre.' </a>'
 			.'</td> ' 
 			. ' <td width="85">'
+		    .'<a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> Cadena de </a><br>'
 		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF;">'
-		    .$val->mark.'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
+		    .$val->mark.'</a>'
 			.'</td> '
 		    .'</tr>'
     	.'</table>';
