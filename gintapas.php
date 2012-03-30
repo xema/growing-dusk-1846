@@ -33,7 +33,7 @@ $con=json_decode($contents);
  
 $c = count($con);
 
-$s = ($c / 2); // change 3 to the number of columns you want to have.
+$s = ($c / 3); // change 3 to the number of columns you want to have.
 $aux=0;
 foreach ($con as $val) {
 
