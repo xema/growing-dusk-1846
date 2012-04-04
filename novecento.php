@@ -45,7 +45,7 @@ $s = ($c / 1); // change 3 to the number of columns you want to have.
 $aux=0;
 foreach ($con as $val) {
        $aux+=1;
-       $bgcolor = ($aux % 2 === 0) ? '#e8ebec' : '#FCFCFE';
+       $bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
        
       if($val->url != "")
       {
@@ -90,6 +90,9 @@ foreach ($con as $val) {
 
 </table>
 </ul>
+<div class="fb-comments" data-href="http://prod.hooptap.com/preview/fb/ranking/heroku_file/novecento.php" data-num-posts="2" data-width="750"></div>
+
 </div >
+
 </body>
 </html>
