@@ -43,7 +43,7 @@ $c = count($con);
 
 $s = ($c / 1); // change 3 to the number of columns you want to have.
 $aux=0;
-foreach ($con as $val) {
+foreach ($con as $val) { 
        $aux+=1;
        $name=explode(" ",$val->nombre);
        $bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
@@ -70,7 +70,7 @@ foreach ($con as $val) {
       }
       else
       {
-    echo '<table align="center" width="750" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.'>'
+    echo '<table align="center" width="750" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.'">'
 		    .'<tr><td width="200px" align="center">'
 		    .'<a style="  font-size:35px; color:#000000;">'.$aux.'.</a>'
 		    .'</td> '
