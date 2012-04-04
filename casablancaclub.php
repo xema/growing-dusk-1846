@@ -46,6 +46,8 @@ $aux=0;
 foreach ($con as $val) {
       $aux+=1;
       $name=explode(" ",$val->nombre);
+ if($val->url != "")
+      {
     echo '<table width="100" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
     .'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/' 
 		   . $val->url .'.jpg" width="100" height="100"/>'
@@ -55,6 +57,17 @@ foreach ($con as $val) {
     	.$name[0]
 	.'</span></p>'
 	.'</td></tr></table>';
+      }
+      else{
+       echo '<table width="100" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
+    .'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
+		       .'</div></td></tr>'
+    	.'<tr align="center"><td ><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
+    	.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 100px;">'
+    	.$name[0]
+	.'</span></p>'
+	.'</td></tr></table>';
+      }
     if($i != 0 && $i % $s == 0) 
     {
         ?>
