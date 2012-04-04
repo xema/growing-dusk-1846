@@ -45,6 +45,7 @@ $s = ($c / 1); // change 3 to the number of columns you want to have.
 $aux=0;
 foreach ($con as $val) {
        $aux+=1;
+       $name=explode(" ",$val->nombre);
        $bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
        
       if($val->url != "")
@@ -57,7 +58,7 @@ foreach ($con as $val) {
 		    . $val->url .'.jpg" width="100" height="100"/>'
 		    .'</div></td >'
 		    . ' <td width="200px">'
-		    .'<a style=" font-size:20px; color:#000000"> '.$val->nombre.' </a>'
+		    .'<a style=" font-size:20px; color:#000000"> '.$name.' </a>'
 			.'</td> ' 
 			. ' <td width="150px">'
 		    .'<a style="  font-size:20px; color:#000000">&nbsp;&nbsp;&nbsp;'
@@ -76,7 +77,7 @@ foreach ($con as $val) {
 		    .' <td width="200px"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
 		    .'</div></td >'
 		    . ' <td width="200px">'
-		    .'<a style="  font-size:20px; color:#000000;"> '.$val->nombre.' </a>'
+		    .'<a style="  font-size:20px; color:#000000;"> '.$name.' </a>'
 			.'</td> ' 
 			. ' <td width="150px">'
 		    .'<a style="  font-size:20px; color:#000000;">&nbsp;&nbsp;&nbsp;'
