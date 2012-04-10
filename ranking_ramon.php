@@ -21,7 +21,7 @@
   
  
 <br> 
-  <a style="font-family: Happy Monkey; font-size:35px; color:#FBF8EF"> Ranking Reto Ramon</a>
+  <a style="font-family: Happy Monkey; font-size:35px; color:#FBF8EF"> Ranking Reto Ramón</a>
   <br>
 <a style="font-family: Happy Monkey; font-size:30px; color:#FBF8EF" >Hooptap</img></a>
 
