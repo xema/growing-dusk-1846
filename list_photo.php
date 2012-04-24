@@ -4,13 +4,9 @@ include("dbconect.php");
 $con = conectame();
 $rid=$_GET['rid'];
  
-$sql=mysql_query("SELECT u.name, u.imgid AS url, u.id AS user_id
-FROM rstatuses AS r
-RIGHT JOIN users AS u ON u.id = r.user_id
-WHERE r.reto_id =$rid AND r.disponibilidad=3
-GROUP BY u.name DESC
-ORDER BY `u`.`name` ASC
-LIMIT 0 , 30");
+$sql=mysql_query("SELECT r.type, r.reto_id, r.user_id, r.mark AS mark, u.name AS name, u.imgid  AS url  FROM ranking_games AS r 
+LEFT JOIN users AS u ON u.id = r.user_id WHERE u.group_id =4 AND r.reto_id=$rid
+ORDER BY `r`.`mark` DESC LIMIT 0 , 5");
 
 while($row = mysql_fetch_array($sql))
 {
