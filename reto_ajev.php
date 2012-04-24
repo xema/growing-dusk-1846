@@ -5,8 +5,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 	<style type="text/css">
-		.avatar{border:200px;position:relative;z-index:1;background-color:#FFFFFF;}
-		.avatar-wrap{width:200px;height:200px;border:200px;position:relative;border:3px solid #FFFFFF;margin:0 0 3px 0}
+		.avatar{border:210px;position:relative;z-index:1;background-color:#FFFFFF;}
+		.avatar-wrap{width:210px;height:210px;border:210px;position:relative;border:3px solid #FFFFFF;margin:0 0 0px 0}
 		 .box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
 		 .box-wrap{width:765px;   border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
 	
@@ -29,9 +29,9 @@
 }(document, 'script', 'facebook-jssdk'));</script>
  <div class="box box-780 box-wrap"  >
  
- <img src="http://prod.hooptap.com/preview/fb/ranking/heroku_file/images/cabecera-ajev.jpg"  width="765px"></img>
+ <img src="http://prod.hooptap.com/preview/fb/ranking/heroku_file/images/cabecera_ajev.jpg"  width="765px"></img>
    
- <div style="width: 200px; float: left; margin-left: 20px;" align="center" >
+ <div style="width: 210px; float: left; margin-left: 50px;" align="center" >
 <ul style=" padding-left: 2px;">
 <?php
 $contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=337');
@@ -48,11 +48,11 @@ foreach ($con as $val) {
       $name=explode(" ",$val->nombre);
       if($val->url != "")
       {
-    echo '<table width="200" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
-    .'<img  class="avatar avatar-100 photo" src="'. $val->url .'" width="200" height="200"/>'
+    echo '<table width="250" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
+    .'<img  class="avatar avatar-100 photo" src="'. $val->url .'" width="210" height="210"/>'
 		       .'</div></td></tr>'
     	.'<tr align="center"><td ><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
-    	.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 200px;">'
+    	.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 210px;">'
     	.$name[0]
 	.'</span></p>'
 	.'</td></tr></table>';
@@ -72,8 +72,8 @@ foreach ($con as $val) {
         ?>
         </ul>
         </div>
-       <div style="width: 200px; float: left; margin-left: 20px;">
-        <ul style=" padding-left: 5px;">
+       <div style="width: 210px; float: left; margin-left: 20px;">
+        <ul style=" padding-left: 10px;">
         <?php
     }
     $i++;
