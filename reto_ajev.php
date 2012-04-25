@@ -9,7 +9,7 @@
 		.avatar-wrap{width:210px;height:210px;border:210px;position:relative;border:3px solid #FFFFFF;margin:0 0 0px 0}
 		 .box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
 		 .box-wrap{width:765px;   border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
-		 .descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; padding-right: 106px;}
+		 .descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; width: 649px; float: left;}
 	
 			</style>
 	<!-- 	
@@ -32,8 +32,7 @@
  
  <img src="http://growing-dusk-1846.herokuapp.com/images/cabecera_ajev.jpg"  width="765px"></img>
  <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br />
-Descárgate Hooptap (app gratuita) en tu movil desde nuestra web www.hooptap.com <br />
-o capturando el QR de la derecha y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
+Descárgate Hooptap (app gratuita) en tu movil desde nuestra web www.hooptap.com o capturando el QR de la derecha, busca el reto ¿Crees que eres emprendedor? y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
  <div style="width: 210px; float: left; margin-left: 50px;" align="center" >
 <ul style=" padding-left: 2px;">
 <?php
