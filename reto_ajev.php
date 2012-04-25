@@ -31,8 +31,8 @@
  <div class="box box-780 box-wrap"  >
  
  <img src="http://growing-dusk-1846.herokuapp.com/images/cabecera_ajev.jpg"  width="765px"></img>
- <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br />
-Descárgate Hooptap (app gratuita) en tu movil desde nuestra web www.hooptap.com o capturando el QR de la derecha, busca el reto ¿Crees que eres emprendedor? y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
+ <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br /><br />
+Descárgate <b>Hooptap</b> (app gratuita) en tu móvil desde la web www.hooptap.com o capturando el QR de la derecha, busca el reto ¿Crees que eres emprendedor? y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
  <div style="width: 210px; float: left; margin-left: 50px;" align="center" >
 <ul style=" padding-left: 2px;">
 <?php
@@ -72,8 +72,8 @@ foreach ($con as $val) {
     if($i != 0 && $i % $s == 0) 
     {
         ?>
-        </ul>
-        </div>
+    </ul>
+   </div>
        <div style="width: 210px; float: left; margin-left: 20px;">
         <ul style=" padding-left: 10px;">
         <?php
@@ -84,7 +84,7 @@ foreach ($con as $val) {
 </ul>
 </div >
 <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/reto_ajev.php" data-num-posts="2" data-width="760"></div>
-  </div>
+</div>
 
 </body>
 </html>
