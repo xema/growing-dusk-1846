@@ -34,56 +34,56 @@
  <img src="http://growing-dusk-1846.herokuapp.com/images/cabecera_ajev.jpg"  width="765px"></img>
  <div style=" float: left; width:745px; background-color:#e8ebec; padding-left: 10px; height:120px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br /><br />
 Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto ¿Crees que eres emprendedor? y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
- <div style="width: 210px; float: left; margin-left: 50px;" align="center" >
-<ul style=" padding-left: 2px;">
-<?php
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=337');
-
-//$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
-$con=json_decode($contents);
- 
-$c = count($con);
-
-$s = ($c / 3); // change 3 to the number of columns you want to have.
-$aux=0;
-foreach ($con as $val) {
-      $aux+=1;
-      $name=explode(" ",$val->nombre);
-      if($val->url != "")
-      {
-    echo '<table width="250" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
-    .'<img  class="avatar avatar-100 photo" src="'. $val->url .'" width="210" height="210"/>'
-		       .'</div></td></tr>'
-    	.'<tr align="center"><td ><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
-    	.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 210px;">'
-    	.$name[0]
-	.'</span></p>'
-	.'</td></tr></table>';
-      }
-      else{
-       echo '<table width="100" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
-    .'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
-		       .'</div></td></tr>'
-    	.'<tr align="center"><td ><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
-    	.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 100px;">'
-    	.$name[0]
-	.'</span></p>'
-	.'</td></tr></table>';
-      }
-    if($i != 0 && $i % $s == 0) 
-    {
-        ?>
+ <div style="width: 210px; float: left; margin-left: 10px;" align="center" >
+	<ul style=" padding-left: 2px;">
+		<?php
+		$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=337');
+		
+		//$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
+		$con=json_decode($contents);
+		 
+		$c = count($con);
+		
+		$s = ($c / 3); // change 3 to the number of columns you want to have.
+		$aux=0;
+		foreach ($con as $val) {
+			  $aux+=1;
+			  $name=explode(" ",$val->nombre);
+			  if($val->url != "")
+			  {
+			echo '<li><div  class="avatar-wrap">'
+			.'<img  class="avatar avatar-100 photo" src="'. $val->url .'" width="210" height="210"/>'
+					   .'</div>'
+				.'<p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
+				.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 210px;">'
+				.$name[0]
+			.'</span></p>'
+			.'</li>';
+			  }
+			  else{
+			   echo '<li><div  class="avatar-wrap">'
+			.'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
+					   .'</div>'
+				.'<p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
+				.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 100px;">'
+				.$name[0]
+			.'</span></p>'
+			.'</li>';
+			  }
+			if($i != 0 && $i % $s == 0) 
+			{
+				?>
     </ul>
    </div>
-       <div style="width: 210px; float: left; margin-left: 20px;">
-        <ul style=" padding-left: 10px;">
-        <?php
-    }
-    $i++;
-}
-?>
-</ul>
-</div >
+   <div style="float: left; margin-left: 10px;">
+   		<ul style=" padding-left: 10px;">
+        	<?php
+    			}
+    		$i++;
+			}
+			?>
+		</ul>
+	</div >
 <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/reto_ajev.php" data-num-posts="2" data-width="760"></div>
 </div>
 
