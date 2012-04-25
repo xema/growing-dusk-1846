@@ -29,7 +29,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
  <div class="box box-780 box-wrap"  >
  
- <img src="http://prod.hooptap.com/preview/fb/ranking/heroku_file/images/cabecera_ajev.jpg"  width="765px"></img>
+ <img src="http://growing-dusk-1846.herokuapp.com/images/cabecera_ajev.jpg"  width="765px"></img>
    
  <div style="width: 210px; float: left; margin-left: 50px;" align="center" >
 <ul style=" padding-left: 2px;">
