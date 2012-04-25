@@ -34,7 +34,7 @@
  <div style="width: 210px; float: left; margin-left: 50px;" align="center" >
 <ul style=" padding-left: 2px;">
 <?php
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=337');
+$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=392');
 
 //$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
 $con=json_decode($contents);
