@@ -9,7 +9,8 @@
 		.avatar-wrap{width:210px;height:210px;border:210px;position:relative;border:3px solid #FFFFFF;margin:0 0 0px 0}
 		 .box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
 		 .box-wrap{width:765px;   border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
-		 .descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; width: 640px; float: left;}
+		 .descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; width: 640px; float: left; color: #666; margin-right: 6px;}
+		 .descp a{ color: #000;}
 	
 			</style>
 	<!-- 	
@@ -31,12 +32,12 @@
  <div class="box box-780 box-wrap"  >
  
  <img src="http://growing-dusk-1846.herokuapp.com/images/cabecera_ajev.jpg"  width="765px"></img>
- <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br /><br />
+ <div style=" float: left; width:745px; background-color:#e8ebec; padding-left: 10px; height:120px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br /><br />
 Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto ¿Crees que eres emprendedor? y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
  <div style="width: 210px; float: left; margin-left: 50px;" align="center" >
 <ul style=" padding-left: 2px;">
 <?php
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=392');
+$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=337');
 
 //$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
 $con=json_decode($contents);
