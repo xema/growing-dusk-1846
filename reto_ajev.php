@@ -32,10 +32,10 @@
  <div class="box box-780 box-wrap"  >
  
  <img src="http://growing-dusk-1846.herokuapp.com/images/cabecera_ajev.jpg"  width="765px"></img>
- <div style=" float: left; width:745px; background-color:#e8ebec; padding-left: 10px; height:120px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br /><br />
+ <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px; border-bottom: 1px solid #999; padding-top: 10px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br /><br />
 Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto ¿Crees que eres emprendedor? y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
  <div style="width: 210px; float: left; margin-left: 10px;" align="center" >
-	<ul style=" padding-left: 2px;">
+	<ul style=" padding-left: 2px; list-style: none;">
 		<?php
 		$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=337');
 		
@@ -73,10 +73,6 @@ Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hoopta
 			if($i != 0 && $i % $s == 0) 
 			{
 				?>
-    </ul>
-   </div>
-   <div style="float: left; margin-left: 10px;">
-   		<ul style=" padding-left: 10px;">
         	<?php
     			}
     		$i++;
