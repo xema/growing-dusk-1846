@@ -11,6 +11,7 @@
 		 .box-wrap{width:765px;   border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
 		 .descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; width: 640px; float: left; color: #666; margin-right: 6px;}
 		 .descp a{ color: #000;}
+		 UL LI{ display: inline; width: 250px; float: left; margin-bottom: 5px;}
 	
 			</style>
 	<!-- 	
@@ -51,7 +52,7 @@ Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hoopta
 			  $name=explode(" ",$val->nombre);
 			  if($val->url != "")
 			  {
-			echo '<li style="display: inline;"><div  class="avatar-wrap">'
+			echo '<li><div  class="avatar-wrap">'
 			.'<img  class="avatar avatar-100 photo" src="'. $val->url .'" width="210" height="210"/>'
 					   .'</div>'
 				.'<p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
@@ -61,7 +62,7 @@ Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hoopta
 			.'</li>';
 			  }
 			  else{
-			   echo '<li style="display: inline;;"><div  class="avatar-wrap">'
+			   echo '<li><div  class="avatar-wrap">'
 			.'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
 					   .'</div>'
 				.'<p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
