@@ -51,7 +51,7 @@ Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hoopta
 			  $name=explode(" ",$val->nombre);
 			  if($val->url != "")
 			  {
-			echo '<li><div  class="avatar-wrap">'
+			echo '<li style="float: left;"><div  class="avatar-wrap">'
 			.'<img  class="avatar avatar-100 photo" src="'. $val->url .'" width="210" height="210"/>'
 					   .'</div>'
 				.'<p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
@@ -61,7 +61,7 @@ Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hoopta
 			.'</li>';
 			  }
 			  else{
-			   echo '<li><div  class="avatar-wrap">'
+			   echo '<li style="float: left;"><div  class="avatar-wrap">'
 			.'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
 					   .'</div>'
 				.'<p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
