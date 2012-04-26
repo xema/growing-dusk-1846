@@ -33,8 +33,9 @@
  <div class="box box-780 box-wrap"  >
  
  <img src="http://growing-dusk-1846.herokuapp.com/images/cabecera_ajev.jpg"  width="765px"></img>
- <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px; border-bottom: 1px solid #999; padding-top: 10px;"><span class="descp">¿Quieres ganar una inscripción gratuita a los talleres, foros y seminarios AJEV durante todo 2012?<br /><br />
-Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto ¿Crees que eres emprendedor? y ¡participa!</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
+ <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px; border-bottom: 1px solid #999; padding-top: 10px;"><span class="descp">¡Participa! Descárgate Hooptap (app gratis) en tu móvil y busca el reto: ¿Crees que eres emprendedor?<br /><br />
+Si muestras tu perfil más emprendedor entrarás en el sorteo de la inscripción gratuita en los seminarios de AJEV durante todo 2012. 
+Captura el QR que te llevará a la descarga o accede a nuestra web: <a href="http://www.hooptap.com" target="_blank">www.hooptap.com</a> </span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
  <div style="width: 760px; float: left; margin-left: 5px;" align="center" >
 	<ul style=" padding-left: 2px; list-style: none;">
 		<?php
