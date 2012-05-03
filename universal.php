@@ -30,6 +30,8 @@
  <div class="box box-780 box-wrap"  >
  
  <img src="http://prod.hooptap.com/preview/fb/ranking/heroku_file/images/universal.jpg"  width="765px"></img>
+  <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px; border-bottom: 1px solid #999; padding-top: 10px;"><span class="descp"> ¿Te mereces ganar una escapada en la costa mediterránea?<br /><br />
+Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="http://www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto Universal Places, resuelve el puzzle y entrarás en el sorteo de un finde gratis.</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
    
  <div style="width: 100px; float: left; margin-left: 20px;" align="center" >
 <ul style=" padding-left: 2px;">
@@ -82,7 +84,7 @@ foreach ($con as $val) {
 ?>
 </ul>
 </div >
-<div class="fb-comments" data-href="http://prod.hooptap.com/preview/fb/ranking/heroku_file/gintapas.php" data-num-posts="2" data-width="765"></div>
+<div class="fb-comments" data-href="http://prod.hooptap.com/preview/fb/ranking/heroku_file/universal.php" data-num-posts="2" data-width="760"></div>
   </div>
 
 </body>
