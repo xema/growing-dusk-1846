@@ -5,10 +5,15 @@
 	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 	<style type="text/css">
-		.avatar{border:100px;position:relative;z-index:1;background-color:#FFFFFF;}
-		.avatar-wrap{width:100px;height:100px;border:100px;position:relative;border:3px solid #FFFFFF;margin:0 0 3px 0}
+		.avatar{border:100px;position:relative;z-index:1;background-color:#FFFFFF; }
+		.avatar-wrap{width:100px;height:100px;border:100px;position:relative;border:3px solid #FFFFFF;float: left;}
 		 .box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
-		 .box-wrap{width:765px; height:965px;  border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
+		 .box-wrap{width:765px;   border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
+		 .descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; width: 640px; float: left; color: #666; margin-right: 6px;}
+		 .descp a{ color: #000;}
+		 UL LI{ width: 734px; float: left; margin-bottom: 5px; margin-left: 16px;}
+		 h3{ float: left; width:115px; height: 106px; text-align: center; margin: 0;}
+		 a {  font-family:Arial;}
 	
 			</style>
 	<!-- 	
@@ -30,61 +35,69 @@
  <div class="box box-780 box-wrap"  >
  
  <img src="http://prod.hooptap.com/preview/fb/ranking/heroku_file/images/universal.jpg"  width="765px"></img>
-  <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px; border-bottom: 1px solid #999; padding-top: 10px;"><span class="descp"> ¿Te mereces ganar una escapada en la costa mediterránea?<br /><br />
+ <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px; border-bottom: 1px solid #999; padding-top: 10px;"><span class="descp"> ¿Te mereces ganar una escapada en la costa mediterránea?<br /><br />
 Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="http://www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto Universal Places, resuelve el puzzle y entrarás en el sorteo de un finde gratis.</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
    
- <div style="width: 100px; float: left; margin-left: 20px;" align="center" >
-<ul style=" padding-left: 2px;">
-<?php
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_gamer.php?rid=307');
+ <div style="width: 760px; float: left; margin-left: 5px;" align="center" >
+	<ul style=" padding-left: 2px; list-style: none; float:left;">
+		<?php
+			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_fast.php?rid=358&type=2');
 
-//$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
-$con=json_decode($contents);
- 
-$c = count($con);
-
-$s = ($c / 6); // change 3 to the number of columns you want to have.
+			//$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
+			$con=json_decode($contents);
+			 
+			$c = count($con);
+			
+			$s = ($c / 1); // change 3 to the number of columns you want to have.
 $aux=0;
-foreach ($con as $val) {
-      $aux+=1;
-      $name=explode(" ",$val->nombre);
- if($val->url != "")
+foreach ($con as $val) { 
+       $aux+=1;
+       //$name=explode(" ",$val->nombre);
+       $bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
+       
+      if($val->url != "")
       {
-    echo '<table width="100" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
-    .'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/' 
-		   . $val->url .'.jpg" width="100" height="100"/>'
-		       .'</div></td></tr>'
-    	.'<tr align="center"><td ><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
-    	.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 100px;">'
-    	.$name[0]
-	.'</span></p>'
-	.'</td></tr></table>';
+    echo '<table align="center" width="750px" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.' ">  '
+		    .'<tr><td width="115px" align="center">'
+		    .'<a style=" font-size:35px; color:#000000">'.$aux.'.</a>'
+		    .'</td> '
+		    .' <td width="125px"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/' 
+		    . $val->url .'.jpg" width="100" height="100"/>'
+		    .'</div></td >'
+		    . ' <td width="300px">'
+		    .'<a style=" font-size:20px; color:#000000"> '.$val->nombre.' </a>'
+			.'</td> ' 
+			. ' <td width="160px">'
+		    .'<a style="  font-size:20px; color:#000000">&nbsp;&nbsp;&nbsp;'
+		    .$val->times
+		    .'</a>'
+			.'</td> '
+		    .'</tr>'
+    	.'</table>';
       }
-      else{
-       echo '<table width="100" border="0" cellspacing="0" cellpadding="0"> <tr><td"><div  class="avatar-wrap">'
-    .'<img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
-		       .'</div></td></tr>'
-    	.'<tr align="center"><td ><p style="color: #414141; font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin: 0;">'
-    	.' <span style="overflow:hidden; color: #000000; font-weight:bold; text-transform:uppercase; display: block; height: 15px; width: 100px;">'
-    	.$name[0]
-	.'</span></p>'
-	.'</td></tr></table>';
+      else
+      {
+    echo '<table align="center" width="750" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.'">'
+		    .'<tr><td width="115px" align="center">'
+		    .'<a style="  font-size:35px; color:#000000;">'.$aux.'.</a>'
+		    .'</td> '
+		    .' <td width="125px"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
+		    .'</div></td >'
+		    . ' <td width="300px">'
+		    .'<a style="  font-size:20px; color:#000000;"> '.$val->nombre.' </a>'
+			.'</td> ' 
+			. ' <td width="160px">'
+		    .'<a style="  font-size:20px; color:#000000;">&nbsp;&nbsp;&nbsp;'
+		    .$val->times.'</a>'
+			.'</td> '
+		    .'</tr>'
+    	.'</table>';
       }
-    if($i != 0 && $i % $s == 0) 
-    {
-        ?>
-        </ul>
-        </div>
-       <div style="width: 100px; float: left; margin-left: 20px;">
-        <ul style=" padding-left: 5px;">
-        <?php
-    }
-    $i++;
 }
 ?>
-</ul>
-</div >
-<div class="fb-comments" data-href="http://prod.hooptap.com/preview/fb/ranking/heroku_file/universal.php" data-num-posts="2" data-width="760"></div>
+</table>
+		</ul>
+<div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/universal.php" data-num-posts="2" data-width="760"></div>
   </div>
 
 </body>
