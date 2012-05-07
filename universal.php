@@ -41,7 +41,7 @@ Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="http://www
  <div style="width: 760px; float: left; margin-left: 5px;" align="center" >
 	<ul style=" padding-left: 2px; list-style: none; float:left;">
 		<?php
-			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_fast.php?rid=358&type=2');
+			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_fast.php?reto_id=358&type=2');
 
 			//$contents = file_get_contents('http://prod.hooptap.com/preview/fb/omexpo/listnofb.php');
 			$con=json_decode($contents);
@@ -64,11 +64,11 @@ foreach ($con as $val) {
 		    .' <td width="125px"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/' 
 		    . $val->url .'.jpg" width="100" height="100"/>'
 		    .'</div></td >'
-		    . ' <td width="300px">'
+		    . ' <td width="270px">'
 		    .'<a style=" font-size:20px; color:#000000"> '.$val->nombre.' </a>'
 			.'</td> ' 
-			. ' <td width="160px">'
-		    .'<a style="  font-size:20px; color:#000000">&nbsp;&nbsp;&nbsp;'
+			. ' <td width="190px" style="text-align:right">'
+		    .'<a style="  font-size:20px; color:#000000; margin-right:20px;">'
 		    .$val->times
 		    .'</a>'
 			.'</td> '
@@ -83,11 +83,11 @@ foreach ($con as $val) {
 		    .'</td> '
 		    .' <td width="125px"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
 		    .'</div></td >'
-		    . ' <td width="300px">'
+		    . ' <td width="270px">'
 		    .'<a style="  font-size:20px; color:#000000;"> '.$val->nombre.' </a>'
 			.'</td> ' 
-			. ' <td width="160px">'
-		    .'<a style="  font-size:20px; color:#000000;">&nbsp;&nbsp;&nbsp;'
+			. ' <td width="190px" style="text-align:right">'
+		    .'<a style="  font-size:20px; color:#000000; margin-right:20px;">'
 		    .$val->times.'</a>'
 			.'</td> '
 		    .'</tr>'
