@@ -36,7 +36,7 @@
  
  <img src="http://prod.hooptap.com/preview/fb/ranking/heroku_file/images/universal.jpg"  width="765px"></img>
  <div style=" float: left; width:755px; background-color:#e8ebec; padding-left: 10px; height:120px; border-bottom: 1px solid #999; padding-top: 10px;"><span class="descp"> ¿Te mereces ganar una escapada en la costa mediterránea?<br /><br />
-Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="http://www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto Universal Places, resuelve el puzzle y entrarás en el sorteo de un finde gratis.</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
+Descárgate Hooptap (app gratuita) en tu móvil desde la web <a href="http://www.hooptap.com" target="_blank">www.hooptap.com</a> o captura este QR. Busca el reto Universal Places, resuelve el puzzle y consigue hacerlo en el menor tiempo posible para ganar el premio. (El concurso finaliza el 07/06/2012 a las 18:00).</span><img src="http://growing-dusk-1846.herokuapp.com/images/qr.jpg"  width="96px" height="100px"></img></div>
    
  <div style="width: 760px; float: left; margin-left: 5px;" align="center" >
 	<ul style=" padding-left: 2px; list-style: none; float:left;">
