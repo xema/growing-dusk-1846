@@ -28,7 +28,7 @@
 <ul style=" padding-left: 5px;">
 <?php
 
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking_buzz/listnofb.php');
+$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/listnofb.php');
 $con=json_decode($contents);
  
 $c = count($con);
