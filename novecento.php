@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 		.avatar{border:100px;position:relative;z-index:1;background-color:#FFFFFF;}
 		.avatar-wrap{width:100px;height:100px;border:100px;position:relative;border:3px solid #FFFFFF;margin:0 0 3px 0}
@@ -11,10 +11,7 @@
 		 .box-wrap{width:750px; height:600px;  border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
 	 a {  font-family:Arial;}
 			</style>
-	<!-- 	
- 		
-		.box{border-radius:75px;position:relative;z-index:1; background-image:url(./images/ios-linen.jpg); background-repeat:repeat;}
-	 -->
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Reto Hooptap</title>
 </head>

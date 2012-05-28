@@ -16,10 +16,7 @@
 		 a {  font-family:Arial;}
 	
 			</style>
-	<!-- 	
- 		
-		.box{border-radius:75px;position:relative;z-index:1; background-image:url(./images/ios-linen.jpg); background-repeat:repeat;}
-	 -->
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Reto Hooptap</title>
 </head>
