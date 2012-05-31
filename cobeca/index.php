@@ -261,6 +261,16 @@ ul.botones li{
    </div>
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="tabs.js"></script>
+<script type="text/javascript">$(document).ready(function(){
+    $(".menu > li").click(function(e){
+        var a = e.target.id;
+        //desactivamos seccion y activamos elemento de menu
+        $(".menu li.active").removeClass("active");
+        $(".menu #"+a).addClass("active");
+        //ocultamos divisiones, mostramos la seleccionada
+        $(".content").css("display", "none");
+        $("."+a).fadeIn();
+    });
+});</script>
 </body>
 </html>
