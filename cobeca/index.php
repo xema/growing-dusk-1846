@@ -3,6 +3,209 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Documento sin t&iacute;tulo</title>
+<script src="https://maps-api-ssl.google.com/maps/api/js?v=3&sensor=false" type="text/javascript"></script>
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(39.470628, -0.376246);
+	var lbaldo = new google.maps.LatLng(39.468494, -0.37583);
+	var lnove = new google.maps.LatLng(39.470751,  -0.368807);
+	var lcasa = new google.maps.LatLng(39.468465, -0.375296);
+	var lmarquis = new google.maps.LatLng(39.472959, -0.374482);
+	var lclan = new google.maps.LatLng(39.472959, -0.374382);
+	var lgin = new google.maps.LatLng(39.46838, -0.382888);
+	var lhostal = new google.maps.LatLng(39.46838, -0.382788);
+    var myOptions = {
+      zoom: 16,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		
+	var mbaldo = new google.maps.Marker({
+      position: lbaldo, 
+      map: map, 
+      title:"Baldo"
+  }); 
+  
+  	var mnove = new google.maps.Marker({
+      position: lnove, 
+      map: map, 
+      title:"Novecento"
+  }); 
+  
+  	var mcasa = new google.maps.Marker({
+      position: lcasa, 
+      map: map, 
+      title:"La casa Blanca"
+  }); 
+  
+  	var mmarquis = new google.maps.Marker({
+      position: lmarquis, 
+      map: map, 
+      title:"Le Marquis"
+  }); 
+  
+  	var mclan = new google.maps.Marker({
+      position: lclan, 
+      map: map, 
+      title:"Clandestino"
+  }); 
+  
+  	var mgin = new google.maps.Marker({
+      position: lgin, 
+      map: map, 
+      title:"Gin Tapas"
+  }); 
+  	
+	var mhostal = new google.maps.Marker({
+      position: lhostal, 
+      map: map, 
+      title:"L'Hostal"
+  }); 
+	
+	
+	var contentStringbaldo = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<p><b>Cerveceria Baldo</b></p>'+
+    '<div id="bodyContent">'+
+    '<p>Calle Ribera 5, Valencia</p>' +
+    '<p>T. 963 511 561</p>'+
+    '<p><a href="http://www.cerveceriabaldo.com/" target="_blank">'+
+    'www.cerveceriabaldo.com</a></p>'+
+    '</div>'+
+    '</div>';
+	
+	var contentStringnove = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<p><b>Novecento Bar</b></p>'+
+    '<div id="bodyContent">'+
+    '<p>Calle Conde Salvatierra 9, Valencia</p>' +
+    '<p>T. 963 106 939</p>'+
+    '<p><a href="http://www.novecentobar.com/" target="_blank">'+
+    'www.novecentobar.com</a></p>'+
+    '</div>'+
+    '</div>';
+	
+	var contentStringcasa = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<p><b>La Casa Blanca</b></p>'+
+    '<div id="bodyContent">'+
+    '<p>Paseo de Ruzafa 10, Valencia</p>' +
+    '<p>T. 963 511 250</p>'+
+    '<p><a href="http://www.lacasablancaclub.com/" target="_blank">'+
+    'www.www.lacasablancaclub</a></p>'+
+    '</div>'+
+    '</div>';
+	
+	var contentStringmarquis = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<p><b>Le Marquis</b></p>'+
+    '<div id="bodyContent">'+
+    '<p>Marqués de Dos Aguas 6, Valencia</p>' +
+    '<p>T. 963 529 938</p>'+
+    '<p><a href="http://www.lemarquis.es/" target="_blank">'+
+    'www.lemarquis.es</a></p>'+
+    '</div>'+
+    '</div>';
+	
+	var contentStringclan = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<p><b>Clandestino Bar</b></p>'+
+    '<div id="bodyContent">'+
+    '<p>Marqués de Dos Aguas 6, Valencia</p>' +
+    '<p>T. 963 529 938</p>'+
+    '<p><a href="http://www.clandestinobar.es/" target="_blank">'+
+    'www.www.clandestinobar.es</a></p>'+
+    '</div>'+
+    '</div>';
+	
+	var contentStringgin = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<p><b>GIN TAPAS</b></p>'+
+    '<div id="bodyContent">'+
+    '<p>Plaza Vannes 7, Valencia</p>' +
+    '<p>T. 963 940 517</p>'+
+    '<p><a href="http://www.gintapas.com/" target="_blank">'+
+    'www.gintapas.com</a></p>'+
+    '</div>'+
+    '</div>';
+	
+	var contentStringhostal = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<p><b>L Hostalet</b></p>'+
+    '<div id="bodyContent">'+
+    '<p>Plaza Vannes 5, Valencia</p>' +
+    '<p>T. 963 514 859</p>'+
+    '<p><a href="http://www.cobeca.es/hostalet" target="_blank">'+
+    'www.cobeca.es/hostalet</a></p>'+
+    '</div>'+
+    '</div>';
+
+var infowindowbaldo = new google.maps.InfoWindow({
+    content: contentStringbaldo
+});
+
+var infowindownove = new google.maps.InfoWindow({
+    content: contentStringnove
+});
+
+var infowindowcasa = new google.maps.InfoWindow({
+    content: contentStringcasa
+});
+
+var infowindowmarquis = new google.maps.InfoWindow({
+    content: contentStringmarquis
+});
+
+var infowindowclan = new google.maps.InfoWindow({
+    content: contentStringclan
+});
+
+var infowindowgin = new google.maps.InfoWindow({
+    content: contentStringgin
+});
+
+var infowindowhostal = new google.maps.InfoWindow({
+    content: contentStringhostal
+});
+
+google.maps.event.addListener(mbaldo, 'click', function() {
+  infowindowbaldo.open(map,mbaldo);
+});
+
+google.maps.event.addListener(mnove, 'click', function() {
+  infowindownove.open(map,mnove);
+});
+
+google.maps.event.addListener(mcasa, 'click', function() {
+  infowindowcasa.open(map,mcasa);
+});
+
+google.maps.event.addListener(mmarquis, 'click', function() {
+  infowindowmarquis.open(map,mmarquis);
+});
+
+google.maps.event.addListener(mclan, 'click', function() {
+  infowindowclan.open(map,mclan);
+});
+
+google.maps.event.addListener(mgin, 'click', function() {
+  infowindowgin.open(map,mgin);
+});
+
+google.maps.event.addListener(mhostal, 'click', function() {
+  infowindowhostal.open(map,mhostal);
+});
+  }
+
+</script>
 <style>
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
 font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
@@ -70,7 +273,7 @@ ul{
 }
 a{
     cursor: pointer;
-    color: #ece6bd;
+    color: #666666;
     text-decoration: underline;
     outline: none !Important;
 }
@@ -124,7 +327,7 @@ ul.menu li{
 ul.menu li{
     font-weight:700;
     display:block;
-    padding:10px 15px;
+    padding:10px 11px;
     background:#303030;
     margin-bottom:-1px;
     border:1px solid #3e3e3e;
@@ -153,7 +356,7 @@ ul.botones li{
 </style>
 </head>
 
-<body>
+<body  onload="initialize()">
 <div>
 	 <ul class="menu">
 		<li id="baldo" class="active">Baldo</li>
@@ -164,6 +367,7 @@ ul.botones li{
 		<li id="gintapas">Gin Tapas</li>
 		<li id="hostalet">L'Hostalet</li>
 		<li id="catering">Catering</li>
+		<li id="mapa">Mapa</li>
 	</ul>
    <span class="clear"></span>
    <div class="content baldo">
@@ -259,6 +463,11 @@ ul.botones li{
 	   </div>
 	   <span class="clear"></span>
    </div>
+   <div class="content mapa">
+	   <div id="map_canvas" style="width: 750px; height: 400px;">
+	   </div>
+	   <span class="clear"></span>
+   </div>
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript">$(document).ready(function(){
@@ -270,7 +479,9 @@ ul.botones li{
         //ocultamos divisiones, mostramos la seleccionada
         $(".content").css("display", "none");
         $("."+a).fadeIn();
+		initialize();
     });
 });</script>
+
 </body>
 </html>
