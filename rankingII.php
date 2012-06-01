@@ -26,10 +26,10 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
  <div>
- 	<div id="cabecera"><img src="http://growing-dusk-1846.herokuapp.com/images/cabecera.jpg" width="790" height="113" /></div>
-	<div id="informacion"><img src="http://growing-dusk-1846.herokuapp.com/images/info.jpg" width="790" height="181" /></div>
-	<div id="ranking"><img src="http://growing-dusk-1846.herokuapp.com/images/fondo.jpg" width="790" height="300" /></div>
-	<div id="pie"><img src="http://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="790" height="129" /></div> 
+ 	<div id="cabecera"><img src="https://growing-dusk-1846.herokuapp.com/images/cabecera.jpg" width="790" height="113" /></div>
+	<div id="informacion"><img src="https://growing-dusk-1846.herokuapp.com/images/info.jpg" width="790" height="181" /></div>
+	<div id="ranking"><img src="https://growing-dusk-1846.herokuapp.com/images/fondo.jpg" width="790" height="293" /></div>
+	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="790" height="129" /></div> 
  <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="790"></div>
  </div>
 </body>
