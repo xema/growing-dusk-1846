@@ -30,7 +30,7 @@
 	<div id="informacion"><img src="https://growing-dusk-1846.herokuapp.com/images/info.jpg" width="784" height="180" /></div>
 	<div id="ranking"><img src="https://growing-dusk-1846.herokuapp.com/images/fondo.jpg" width="784" height="291" /></div>
 	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="784" height="128" /></div> 
- <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="790"></div>
+ <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
  </div>
 </body>
 </html>
