@@ -50,8 +50,8 @@
 			   $aux+=1;
 			   //$name=explode(" ",$val->nombre);
 			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
-					echo '<table align="center" width="129" border="0" cellspacing="0" cellpadding="0" style="margin-right: 45px;">  '
-					.'<tr>'
+					echo '<table align="center" width="129" border="0" cellspacing="0" cellpadding="0" style="margin-right: 45px;">'
+					.'<tr>';
 					if($val->url != "")
 			  		{
 						echo ' <td width="129"><div  class="avatar-wrap" style="background-color:#fff; padding: 4px;"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/'
