@@ -26,9 +26,73 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
  <div>
- 	<div id="cabecera"><img src="https://growing-dusk-1846.herokuapp.com/images/cabecera.jpg" width="784" height="112" /></div>
-	<div id="informacion"><img src="https://growing-dusk-1846.herokuapp.com/images/info.jpg" width="784" height="180" /></div>
-	<div id="ranking"><img src="https://growing-dusk-1846.herokuapp.com/images/fondo.jpg" width="784" height="291" /></div>
+ 	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera.jpg) 0 0 no-repeat; width:784px">
+		<div style="height:112px;"></div>
+		</div>
+	<div id="informacion" style="background:url(https://growing-dusk-1846.herokuapp.com/images/info.jpg) 0 0 no-repeat; width:784px; height:180px">
+		<div style="width:441px; height: 131px;">
+			<p><b>¿Te mereces ganar una escapada a la costa mediterranea?</b></p>
+			<p>Descárgate Hooptap (app gratuita) en tu móvil desde la web www.hooptap.com o captura este QR. Busca el reto Universal Places, resuelve el puzzle y consigue hacerlo en el menor tiempo posible para ganar el premio.</p>
+			<p>.(El concurso finaliza el 07/06/2012 a las 18:00)</p>
+		</div>
+	</div>
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px;">
+		<?php 
+			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_buzz.php?rid=145');
+			$con=json_decode($contents); 
+			
+			$c = count($con);
+			
+			$s = ($c / 1); // change 3 to the number of columns you want to have.
+$aux=0;
+foreach ($con as $val) { 
+       $aux+=1;
+       //$name=explode(" ",$val->nombre);
+       $bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
+       
+      if($val->url != "")
+      {
+    echo '<table align="center" width="750px" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.' ">  '
+		    .'<tr><td width="115px" align="center">'
+		    .'<a style=" font-size:35px; color:#000000">'.$aux.'.</a>'
+		    .'</td> '
+		    .' <td width="125px"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/' 
+		    . $val->url .'.jpg" width="100" height="100"/>'
+		    .'</div></td >'
+		    . ' <td width="270px">'
+		    .'<a style=" font-size:20px; color:#000000"> '.$val->nombre.' </a>'
+			.'</td> ' 
+			. ' <td width="190px" style="text-align:right">'
+		    .'<a style="  font-size:20px; color:#000000; margin-right:20px;">'
+		    .$val->times
+		    .'</a>'
+			.'</td> '
+		    .'</tr>'
+    	.'</table>';
+      }
+      else
+      {
+    echo '<table align="center" width="750" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.'">'
+		    .'<tr><td width="115px" align="center">'
+		    .'<a style="  font-size:35px; color:#000000;">'.$aux.'.</a>'
+		    .'</td> '
+		    .' <td width="125px"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
+		    .'</div></td >'
+		    . ' <td width="270px">'
+		    .'<a style="  font-size:20px; color:#000000;"> '.$val->nombre.' </a>'
+			.'</td> ' 
+			. ' <td width="190px" style="text-align:right">'
+		    .'<a style="  font-size:20px; color:#000000; margin-right:20px;">'
+		    .$val->times.'</a>'
+			.'</td> '
+		    .'</tr>'
+    	.'</table>';
+      }
+}
+?>
+</table>
+		</ul>
+	</div>
 	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="784" height="128" /></div> 
  <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
  </div>
