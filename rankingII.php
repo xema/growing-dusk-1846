@@ -55,7 +55,7 @@
 					if($val->url != "")
 			  		{
 						echo ' <td width="129"><div  class="avatar-wrap" style="background-color:#fff; padding: 4px;"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/'
-						.$val->url .'.jpg" width="115" height="115" style="margin-bottom: 4px;"/>'
+						.$val->url .'.jpg" width="115" height="115" style="margin-bottom: 4px;"/>';
 					 }
       		 		else
 			  		{
