@@ -12,6 +12,7 @@
 	UL LI{ width: 734px; float: left; margin-bottom: 5px; margin-left: 16px;}
 	h3{ float: left; width:115px; height: 106px; text-align: center; margin: 0;}
 	a {  font-family:Arial;}	
+	p {margin: 0; padding: 0;}
 </style>
 <title>Documento sin t&iacute;tulo</title>
 </head>
@@ -30,7 +31,7 @@
 		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/logo_hoop_ranking.png" width="181" height="59" style="margin-top: 14px;" /></div>
 		</div>
 	<div id="informacion" style="background:url(https://growing-dusk-1846.herokuapp.com/images/info.jpg) 0 0 no-repeat; width:784px; height:180px; text-align: center;">
-		<div style="width:441px; height: 131px; margin: 0 auto;">
+		<div style="width:441px; height: 131px; margin: 0 auto; font-family: Arial, Helvetica, sans-serif; font-size: 10px;">
 			<p><b>¿Te mereces ganar una escapada a la costa mediterranea?</b></p>
 			<p>Descárgate Hooptap (app gratuita) en tu móvil desde la web www.hooptap.com o captura este QR. Busca el reto Universal Places, resuelve el puzzle y consigue hacerlo en el menor tiempo posible para ganar el premio.</p>
 			<p>.(El concurso finaliza el 07/06/2012 a las 18:00)</p>
@@ -44,51 +45,26 @@
 			$c = count($con);
 			
 			$s = ($c / 1); // change 3 to the number of columns you want to have.
-$aux=0;
-foreach ($con as $val) { 
-       $aux+=1;
-       //$name=explode(" ",$val->nombre);
-       $bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
-       
-      if($val->url != "")
-      {
-    echo '<table align="center" width="750px" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.' ">  '
-		    .'<tr><td width="115px" align="center">'
-		    .'<a style=" font-size:35px; color:#000000">'.$aux.'.</a>'
-		    .'</td> '
-		    .' <td width="125px"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/' 
-		    . $val->url .'.jpg" width="100" height="100"/>'
-		    .'</div></td >'
-		    . ' <td width="270px">'
-		    .'<a style=" font-size:20px; color:#000000"> '.$val->nombre.' </a>'
-			.'</td> ' 
-			. ' <td width="190px" style="text-align:right">'
-		    .'<a style="  font-size:20px; color:#000000; margin-right:20px;">'
-		    .$val->times
-		    .'</a>'
-			.'</td> '
-		    .'</tr>'
-    	.'</table>';
-      }
-      else
-      {
-    echo '<table align="center" width="750" border="0" cellspacing="0" cellpadding="0" style="background-color:'.$bgcolor.'">'
-		    .'<tr><td width="115px" align="center">'
-		    .'<a style="  font-size:35px; color:#000000;">'.$aux.'.</a>'
-		    .'</td> '
-		    .' <td width="125px"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
-		    .'</div></td >'
-		    . ' <td width="270px">'
-		    .'<a style="  font-size:20px; color:#000000;"> '.$val->nombre.' </a>'
-			.'</td> ' 
-			. ' <td width="190px" style="text-align:right">'
-		    .'<a style="  font-size:20px; color:#000000; margin-right:20px;">'
-		    .$val->times.'</a>'
-			.'</td> '
-		    .'</tr>'
-    	.'</table>';
-      }
-}
+			$aux=0;
+			foreach ($con as $val) { 
+			   $aux+=1;
+			   //$name=explode(" ",$val->nombre);
+			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
+					echo '<table align="center" width="129" border="0" cellspacing="0" cellpadding="0" style="margin-right: 45px;">  '
+					.'<tr>'
+					if($val->url != "")
+			  		{
+						echo ' <td width="129"><div  class="avatar-wrap" style="background-color:#fff; padding: 4px;"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						.$val->url .'.jpg" width="115" height="115" style="margin-bottom: 4px;"/>'
+					 }
+      		 		else
+			  		{
+						echo ' <td width="129"><div class="avatar-wrap" style="background-color:#fff; padding: 4px;"><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="115" height="115" style="margin-bottom: 4px;"/>';
+					}
+					echo '<p>'.$val->nombre.'</p><p>'.$val->times.'</p></div></td >'
+					.'</tr>'
+					.'</table>';
+		}
 ?>
 </table>
 		</ul>
