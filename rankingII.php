@@ -50,7 +50,7 @@
 			   $aux+=1;
 			   //$name=explode(" ",$val->nombre);
 			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
-					echo '<table align="center" width="129" border="0" cellspacing="0" cellpadding="0" style="margin-right: 45px;">'
+					echo '<table align="center" width="129" border="0" cellspacing="0" cellpadding="0" style="margin-right: 45px; float: left;">'
 					.'<tr>';
 					if($val->url != "")
 			  		{
