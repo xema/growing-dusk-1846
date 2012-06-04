@@ -50,24 +50,18 @@
 			   $aux+=1;
 			   //$name=explode(" ",$val->nombre);
 			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
-					echo '<table align="center" width="129" border="0" cellspacing="0" cellpadding="0" style="margin-right: 45px; float: left;">'
-					.'<tr>';
 					if($val->url != "")
 			  		{
-						echo ' <td width="129"><div  class="avatar-wrap" style="width: 125px;margin: 10px;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						echo '<div style="width: 125px;margin: 10px;position: relative;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
 						.$val->url .'.jpg" width="115" height="115" style=""/>';
 					 }
       		 		else
 			  		{
-						echo ' <td width="129"><div class="avatar-wrap" style="background-color:#fff; padding: 4px;"><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="115" height="115" style="margin-bottom: 4px;"/>';
+						echo '<div style="width: 125px;margin: 10px;position: relative;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p>'.$val->nombre.'</p><p>'.$val->times.'</p></div></td >'
-					.'</tr>'
-					.'</table>';
+					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 0px;">'.$val->nombre.'</p><p>'.$val->times.'</p></div>';
 		}
 ?>
-</table>
-		</ul>
 	</div>
 	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="784" height="128" /></div> 
  <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
