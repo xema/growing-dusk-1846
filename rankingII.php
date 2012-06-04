@@ -14,9 +14,9 @@
 	h3{ float: left; width:115px; height: 106px; text-align: center; margin: 0;}
 	a {  font-family:Arial;}	
 	p {margin: 0; padding: 0;}
-	.pos1{ margin-left: 150px!important;}
+	.pos1{ margin-left: 130px!important;}
 	.pos2{}
-	.pos3{}
+	.pos3{ margin-right:40px!important}
 </style>
 <title>Documento sin t&iacute;tulo</title>
 </head>
@@ -58,14 +58,14 @@
 				{
 					if($val->url != "")
 			  		{
-						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:0;left:82"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
 						.$val->url .'.jpg" width="115" height="115" style=""/>';
 					 }
       		 		else
 			  		{
-						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:0;left:82"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 18px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;"><p>'.$val->times.$aux.'</p></div>';
+					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 18px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;">'.$val->times.$aux.'</p></div>';
 				}
 				else{
 					if($val->url != "")
@@ -77,7 +77,7 @@
 			  		{
 						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 18px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;"><p>'.$val->times.$aux.'</p></div>';
+					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 18px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;">'.$val->times.$aux.'</p></div>';
 		}}
 ?>
 	<div style="clear: both;"></div>
