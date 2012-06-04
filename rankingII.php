@@ -14,7 +14,7 @@
 	h3{ float: left; width:115px; height: 106px; text-align: center; margin: 0;}
 	a {  font-family:Arial;}	
 	p {margin: 0; padding: 0;}
-	.pos1{ margin-left: 100px!important;}
+	.pos1{ margin-left: 108px!important;}
 	.pos2{}
 	.pos3{ margin-right:40px!important}
 </style>
@@ -41,7 +41,7 @@
 			<p style="margin-left: 6px;margin-top: 4px;">(El concurso finaliza el 07/06/2012 a las 18:00).</p>
 		</div>
 	</div>
-	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px; padding: 0 60px 20px 60px; ">
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 46px 20px 46px; ">
 		<?php 
 			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_buzz.php?rid=145');
 			$con=json_decode($contents); 
