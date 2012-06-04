@@ -14,6 +14,9 @@
 	h3{ float: left; width:115px; height: 106px; text-align: center; margin: 0;}
 	a {  font-family:Arial;}	
 	p {margin: 0; padding: 0;}
+	.pos1{ margin-left: 150px!important;}
+	.pos2{}
+	.pos3{}
 </style>
 <title>Documento sin t&iacute;tulo</title>
 </head>
@@ -51,6 +54,20 @@
 			   $aux+=1;
 			   //$name=explode(" ",$val->nombre);
 			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
+			   	if($aux<4)
+				{
+					if($val->url != "")
+			  		{
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						.$val->url .'.jpg" width="115" height="115" style=""/>';
+					 }
+      		 		else
+			  		{
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
+					}
+					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 18px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;"><p>'.$val->times.$aux.'</p></div>';
+				}
+				else{
 					if($val->url != "")
 			  		{
 						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
@@ -60,8 +77,8 @@
 			  		{
 						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 20px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.$aux.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 20px;"><p>'.$val->times.'</p></div>';
-		}
+					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 18px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;"><p>'.$val->times.$aux.'</p></div>';
+		}}
 ?>
 	<div style="clear: both;"></div>
 	</div>
