@@ -52,12 +52,12 @@
 			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
 					if($val->url != "")
 			  		{
-						echo '<div style="width: 125px;margin: 10px;position: relative;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						echo '<div style="width: 125px;margin: 10px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
 						.$val->url .'.jpg" width="115" height="115" style=""/>';
 					 }
       		 		else
 			  		{
-						echo '<div style="width: 125px;margin: 10px;position: relative;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="115" height="115" style=""/>';
+						echo '<div style="width: 125px;margin: 10px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="115" height="115" style=""/>';
 					}
 					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 0px;">'.$val->nombre.'</p><p>'.$val->times.'</p></div>';
 		}
