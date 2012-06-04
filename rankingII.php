@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <style type="text/css">
+	body{font-family: Arial, Helvetica, sans-serif; }
 	.avatar{border:100px;position:relative;z-index:1;background-color:#FFFFFF; }
 	.avatar-wrap{width:100px;height:100px;border:100px;position:relative;border:3px solid #FFFFFF;float: left;}
 	.box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
@@ -31,7 +32,7 @@
 		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/logo_hoop_ranking.png" width="181" height="59" style="margin-top: 14px;" /></div>
 		</div>
 	<div id="informacion" style="background:url(https://growing-dusk-1846.herokuapp.com/images/info.jpg) 0 0 no-repeat; width:784px; height:180px; text-align: center;">
-		<div style="width:441px; height: 131px; margin: 0 auto; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;">
+		<div style="width:441px; height: 131px; margin: 0 auto; font-size: 14px; text-align: left;">
 			<p><b>¿Te mereces ganar una escapada a la costa mediterranea?</b></p>
 			<p>Descárgate Hooptap (app gratuita) en tu móvil desde la web www.hooptap.com o captura este QR. Busca el reto Universal Places, resuelve el puzzle y consigue hacerlo en el menor tiempo posible para ganar el premio.</p>
 			<p>(El concurso finaliza el 07/06/2012 a las 18:00).</p>
@@ -52,14 +53,14 @@
 			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
 					if($val->url != "")
 			  		{
-						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
 						.$val->url .'.jpg" width="115" height="115" style=""/>';
 					 }
       		 		else
 			  		{
-						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="115" height="115" style=""/>';
+						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 0px;">'.$val->nombre.'</p><p>'.$val->times.'</p></div>';
+					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 20px;"><b>'.$val->nombre.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 20px;"><p>'.$val->times.'</p></div>';
 		}
 ?>
 	<div style="clear: both;"></div>
