@@ -36,12 +36,12 @@
 		</div>
 	<div id="informacion" style="background:url(https://growing-dusk-1846.herokuapp.com/images/info.jpg) 0 0 no-repeat; width:784px; height:180px; text-align: center;">
 		<div style="width:441px; height: 131px; margin: 0 auto; font-size: 14px; text-align: left;">
-			<p><b>¿Te mereces ganar una escapada a la costa mediterranea?</b></p>
-			<p>Descárgate Hooptap (app gratuita) en tu móvil desde la web www.hooptap.com o captura este QR. Busca el reto Universal Places, resuelve el puzzle y consigue hacerlo en el menor tiempo posible para ganar el premio.</p>
-			<p>(El concurso finaliza el 07/06/2012 a las 18:00).</p>
+			<p style="margin-left: 6px;padding-top: 18px;margin-bottom: 15px;"><b>¿Te mereces ganar una escapada a la costa mediterranea?</b></p>
+			<p style="margin-left: 6px;line-height: 18px;">Descárgate Hooptap (app gratuita) en tu móvil desde la web www.hooptap.com o captura este QR. Busca el reto Universal Places, resuelve el puzzle y consigue hacerlo en el menor tiempo posible para ganar el premio.</p>
+			<p style="margin-left: 6px;margin-top: 4px;">(El concurso finaliza el 07/06/2012 a las 18:00).</p>
 		</div>
 	</div>
-	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px; padding: 60px; ">
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px; padding: 10px 60px 20px 60px; ">
 		<?php 
 			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_buzz.php?rid=145');
 			$con=json_decode($contents); 
@@ -58,26 +58,26 @@
 				{
 					if($val->url != "")
 			  		{
-						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:-8px;left:103px"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:-8px;left:103px"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="https://hooptap.s3.amazonaws.com/userprofiles/'
 						.$val->url .'.jpg" width="115" height="115" style=""/>';
 					 }
       		 		else
 			  		{
-						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:-8px;left:103px"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:-8px;left:103px"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 23px;overflow: hidden;height: 15px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;">'.$val->times.'</p></div>';
+					echo '<p style="position: absolute;text-align: center;width: 115px;margin-left:5px;bottom: 23px;overflow: hidden;height: 15px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;">'.$val->times.'</p></div>';
 				}
 				else{
 					if($val->url != "")
 			  		{
-						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="https://hooptap.s3.amazonaws.com/userprofiles/'
 						.$val->url .'.jpg" width="115" height="115" style=""/>';
 					 }
       		 		else
 			  		{
-						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
+						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 23px;overflow: hidden;height: 15px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;">'.$val->times.'</p></div>';
+					echo '<p style="position: absolute;text-align: center;width: 115px;margin-left:5px;bottom: 23px;overflow: hidden;height: 15px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 18px;font-size: 12px;">'.$val->times.'</p></div>';
 		}}
 ?>
 	<div style="clear: both;"></div>
