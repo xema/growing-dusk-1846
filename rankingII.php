@@ -62,6 +62,7 @@
 					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 0px;">'.$val->nombre.'</p><p>'.$val->times.'</p></div>';
 		}
 ?>
+	<div style="clear: both;">
 	</div>
 	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="784" height="128" /></div> 
  <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
