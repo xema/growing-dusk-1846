@@ -38,7 +38,7 @@
 			<p>(El concurso finaliza el 07/06/2012 a las 18:00).</p>
 		</div>
 	</div>
-	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px; padding: 60px;">
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px; padding: 60px; ">
 		<?php 
 			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_buzz.php?rid=145');
 			$con=json_decode($contents); 
@@ -60,7 +60,7 @@
 			  		{
 						echo '<div style="width: 125px;margin: 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #000; -moz-box-shadow: 3px 3px 3px #000;box-shadow: 3px 3px 3px #000;" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="115" height="115" style=""/>';
 					}
-					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 20px;"><b>'.$val->nombre.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 20px;"><p>'.$val->times.'</p></div>';
+					echo '<p style="position: absolute;text-align: center;width: 100%;bottom: 20px;overflow: hidden;height: 20px; text-transform:capitalize; font-size: 12px;"><b>'.$val->nombre.$aux.'</b></p style="position: absolute;text-align: center;width: 100%;bottom: 0px;overflow: hidden;height: 20px;"><p>'.$val->times.'</p></div>';
 		}
 ?>
 	<div style="clear: both;"></div>
