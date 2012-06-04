@@ -35,13 +35,13 @@
 		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/logo_hoop_ranking.png" width="181" height="59" style="margin-top: 14px;" /></div>
 		</div>
 	<div id="informacion" style="background:url(https://growing-dusk-1846.herokuapp.com/images/info.jpg) 0 0 no-repeat; width:784px; height:180px; text-align: center;">
-		<div style="width:441px; height: 131px; margin: 0 auto; font-size: 14px; text-align: left;">
+		<div style="width:425px; height: 131px; margin: 0 auto; font-size: 14px; text-align: left;">
 			<p style="margin-left: 6px;padding-top: 18px;margin-bottom: 15px;"><b>¿Te mereces ganar una escapada a la costa mediterranea?</b></p>
 			<p style="margin-left: 6px;line-height: 18px;">Descárgate Hooptap (app gratuita) en tu móvil desde la web www.hooptap.com o captura este QR. Busca el reto Universal Places, resuelve el puzzle y consigue hacerlo en el menor tiempo posible para ganar el premio.</p>
 			<p style="margin-left: 6px;margin-top: 4px;">(El concurso finaliza el 07/06/2012 a las 18:00).</p>
 		</div>
 	</div>
-	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px; padding: 10px 60px 20px 60px; ">
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:784px; padding: 0 60px 20px 60px; ">
 		<?php 
 			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_buzz.php?rid=145');
 			$con=json_decode($contents); 
