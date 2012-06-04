@@ -54,8 +54,8 @@
 					.'<tr>';
 					if($val->url != "")
 			  		{
-						echo ' <td width="129"><div  class="avatar-wrap" style="background-color:#fff; padding: 4px;"><img  class="avatar avatar-100 photo" src="https://hooptap.s3.amazonaws.com/userprofiles/'
-						.$val->url .'.jpg" width="115" height="115" style="margin-bottom: 4px;"/>';
+						echo ' <td width="129"><div  class="avatar-wrap" style="width: 125px;margin: 10px;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 3px 3px 3px #777; -moz-box-shadow: 3px 3px 3px #777;box-shadow: 3px 3px 3px #777;" src="https://hooptap.s3.amazonaws.com/userprofiles/'
+						.$val->url .'.jpg" width="115" height="115" style=""/>';
 					 }
       		 		else
 			  		{
