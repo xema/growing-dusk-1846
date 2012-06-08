@@ -7,7 +7,7 @@
 	<style type="text/css">
 		.avatar{border:100px;position:relative;z-index:1;background-color:#FFFFFF; }
 		.avatar-wrap{width:100px;height:100px;border:100px;position:relative;border:3px solid #FFFFFF;float: left;}
-		 .box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
+		 .box{border:5px;position:relative;z-index:1; background-color:#fff;}
 		 .box-wrap{width:765px;   border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
 		 .descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; width: 640px; float: left; color: #666; margin-right: 6px;}
 		 .descp a{ color: #000;}
