@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <style type="text/css">
-	body{font-family: Arial, Helvetica, sans-serif; }
+	body{font-family: Arial, Helvetica, sans-serif; height: 1200px; }
 	.avatar{border:100px;position:relative;z-index:1;background-color:#FFFFFF; }
 	.avatar-wrap{width:100px;height:100px;border:100px;position:relative;border:3px solid #FFFFFF;float: left;}
 	.box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
@@ -90,16 +90,12 @@
  <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
  </div>
  <script>
-		<!--
-						
-			window.fbAsyncInit	= function() 
-			{
-				// FB._https = true;
-				//FB.init( FB_CONF );
-				
-				FB.Canvas.setAutoGrow(true);
-			};
-		-->
+		window.fbAsyncInit = function() {
+		  FB.init({
+			appId      : '400949663280412', // App ID
+		  });
+		  FB.Canvas.setAutoGrow();
+}
 		</script>
 </body>
 </html>
