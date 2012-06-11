@@ -89,5 +89,17 @@
 	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="784" height="128" /></div> 
  <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
  </div>
+ <script>
+		<!--
+						
+			window.fbAsyncInit	= function() 
+			{
+				// FB._https = true;
+				FB.init( FB_CONF );
+				
+				FB.Canvas.setSize({ width: 860, height: 1200 });
+			};
+		-->
+		</script>
 </body>
 </html>
