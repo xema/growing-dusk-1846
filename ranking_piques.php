@@ -40,7 +40,7 @@
 			<p style="margin-left: 6px;margin-top: 4px;">En caso de ganar más de un pique a la misma persona solo se contabilizará uno.</p>
 		</div>
 	</div>
-	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 46px 20px 46px; ">
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
 		<?php 
 			$contents = file_get_contents('http://176.34.252.128/utils/test3000.php');
 			$con=json_decode($contents); 

@@ -40,7 +40,7 @@
 			<p style="margin-left: 6px;margin-top: 4px;">(El concurso finaliza el 18/06/2012 a las 18:00).</p>
 		</div>
 	</div>
-	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 46px 20px 46px; ">
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
 		<?php 
 			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_fastfast.php?reto_id=471');
 			$con=json_decode($contents); 
