@@ -95,9 +95,9 @@
 			window.fbAsyncInit	= function() 
 			{
 				// FB._https = true;
-				FB.init( FB_CONF );
+				//FB.init( FB_CONF );
 				
-				FB.Canvas.setSize({ width: 860, height: 1200 });
+				FB.Canvas.setAutoGrow(true);
 			};
 		-->
 		</script>
