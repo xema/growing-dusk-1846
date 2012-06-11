@@ -24,7 +24,7 @@ return $tiempo;
 	$q = $con->prepare('SELECT r.mark AS mark, u.username AS name, u.imgid AS url, u.image AS image
 						FROM ranking_games AS r 
 						LEFT JOIN users AS u ON u.id = r.user_id 
-						WHERE r.reto_id= ?
+						WHERE u.group_id=4 AND r.reto_id= ?
 						ORDER BY r.mark ASC 
 						LIMIT 0 , 30');
 	$q->execute(array($reto_id));	
