@@ -42,7 +42,7 @@
 		</div>
 	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
 		<?php 
-			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/listnofb.php?reto_id=224');
+			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_buzz.php?reto_id=224');
 			$con=json_decode($contents); 
 			
 			if($con->status == 'win')
