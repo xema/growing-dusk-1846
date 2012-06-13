@@ -37,10 +37,10 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
  <div>
- 	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera.jpg) 0 0 no-repeat; width:784px; text-align: center;">
-		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/logo_hoop_ranking.png" width="181" height="59" style="margin-top: 14px;" /></div>
+ 	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera_buzz.jpg) 0 0 no-repeat; width:784px; text-align: center;">
+		<!--<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/logo_hoop_ranking.png" width="181" height="59" style="margin-top: 14px;" /></div>-->
 		</div>
-	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo_buzz.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
 		<?php 
 			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_buzz.php?reto_id=224');
 			$con=json_decode($contents); 
@@ -68,7 +68,7 @@
 ?>
 	<div style="clear: both;"></div>
 	</div>
-	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="784" height="128" /></div> 
+	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie_buzz.jpg" width="784" height="9" /></div> 
  <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
  </div>
 </body>
