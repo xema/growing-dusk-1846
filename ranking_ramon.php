@@ -37,7 +37,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
  <div>
- 	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera_ramon.jpg) 0 0 no-repeat; width:784px; text-align: center;">
+ 	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera_simon.jpg) 0 0 no-repeat; width:784px; text-align: center;">
 		<div style="height:112px; margin: 0 auto;"></div>
 		</div>
 	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo_ramon.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
