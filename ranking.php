@@ -1,97 +1,89 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
-	<style type="text/css">
-		.avatar{border-radius:100px;position:relative;z-index:1}
-		.avatar-wrap{width:100px;height:100px;border-radius:100px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
-		 
-		.box{border-radius:75px;position:relative;z-index:1; background-color:#01A9DB;}
- 		.box-wrap{width:750px; border-radius:75px;position:relative;border:8px solid #0489B1;margin:0 0 3px 0}
-	</style>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Reto Hooptap</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+	body{font-family: Arial, Helvetica, sans-serif; }
+	.avatar{border:100px;position:relative;z-index:1;background-color:#FFFFFF; }
+	.avatar-wrap{width:100px;height:100px;border:100px;position:relative;border:3px solid #FFFFFF;float: left;}
+	.box{border:5px;position:relative;z-index:1; background-color:#e8ebec;}
+	.box-wrap{width:765px;   border:5px;position:relative;border:0px solid #FFFFFF;margin:0 0 3px 0}
+	.descp{font-family: 'Happy Monkey', cursive; font-size: 14px; font-weight: bold; width: 640px; float: left; color: #666; margin-right: 6px;}
+	.descp a{ color: #000;}
+	UL LI{ width: 734px; float: left; margin-bottom: 5px; margin-left: 16px;}
+	h3{ float: left; width:115px; height: 106px; text-align: center; margin: 0;}
+	a {  font-family:Arial;}	
+	p {margin: 0; padding: 0;}
+	.pos1{ margin-left: 108px!important;}
+	.pos2{}
+	.pos3{ margin-right:40px!important}
+</style>
+<title>Documento sin t&iacute;tulo</title>
 </head>
+
 <body>
-<div style="margin:0; padding:0; width:750px;" align="center" class="box box-750 box-wrap">
-  
- 
-<br> 
-  <a style="font-family: Happy Monkey; font-size:35px; color:#FBF8EF"> Ranking Reto Buzz</a>
-  <br>
-<a style="font-family: Happy Monkey; font-size:30px; color:#FBF8EF" >Hooptap</img></a>
+<div id="fb-root"></div>
+<script>
+		window.fbAsyncInit = function() {
+		FB.Canvas.setAutoGrow();
+		FB.Canvas.scrollTo(0,0);
+		};
+</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ <div>
+ 	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera.jpg) 0 0 no-repeat; width:784px; text-align: center;">
+		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/logo_hoop_ranking.png" width="181" height="59" style="margin-top: 14px;" /></div>
+		</div>
+	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
+		<?php 
+			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/listnofb.php?reto_id=224');
+			$con=json_decode($contents); 
+			
+			if($con->status == 'win')
+			{
+				$ganador = $con->user_win;
+			}
 
-<ul style=" padding-left: 5px;">
-<?php
-
-$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/listnofb.php?reto_id=224');
-$con=json_decode($contents);
- 
-$c = count($con);
-
-$s = ($c / 1); // change 3 to the number of columns you want to have.
-$aux=0;
-foreach ($con as $val) {
-
-      $aux+=1;
-      if($val->url != "")
-      {
-    echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
-		    .'<tr><td width="15" align="right">'
-		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF">'.$aux.'.</a>'
-		    .'<td> '
-		    .' <td width="100"><div  class="avatar-wrap"><img  class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/' 
-		    . $val->url .'.jpg" width="100" height="100"/>'
-		    .'</div><td >'
-		    . ' <td width="175">'
-		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF"> '.$val->nombre.' </a>'
-			.'</td> ' 
-			. ' <td width="85">'
-		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF">'
-		    .$val->mark
-		    .'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
-			.'</td> '
-		    .'</tr>'
-    	.'</table>';
-      }
-      else
-      {
-    echo '<table width="520" border="0" cellspacing="0" cellpadding="0">  '
-		    .'<tr><td width="15" align="right">'
-		    .'<a style="font-family: Chango, cursive; font-size:35px; color:#FBF8EF;">'.$aux.'.</a>'
-		    .'<td> '
-		    .' <td width="100"><div class="avatar-wrap" ><img   class="avatar avatar-100 photo" src="http://prod.hooptap.com/media/userprofiles/default.jpg" width="100" height="100"/>'
-		    .'</div><td >'
-		    . ' <td width="175">'
-		    .'<a style="font-family: Happy Monkey; font-size:20px; color:#FBF8EF;"> '.$val->nombre.' </a>'
-			.'</td> ' 
-			. ' <td width="85">'
-		    .'<a style="font-family: Chango, cursive; font-size:20px; color:#FBF8EF;">'
-		    .$val->mark.'</a><br><a style="font-family: Happy Monkey; font-size:14px; color:#FBF8EF;"> puntos </a>'
-			.'</td> '
-		    .'</tr>'
-    	.'</table>';
-      }
-    if($i != 0 && $i % $s == 0)
-    {
+			$aux=0;
+			foreach ($con->usuarios as $val) { 
+			   $aux+=1;
+			   //$name=explode(" ",$val->nombre);
+			   //$bgcolor = ($aux % 2 === 0) ? '#FCFCFE' : '#e8ebec';
+			   	if($aux<4)
+				{
+					if($val->img != "")
+			  		{
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px 30px 20px 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:-8px;left:103px"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="'
+						.$val->img .'" width="119" height="119" style=""/>';
+					 }
+      		 		else
+			  		{
+						echo '<div class="pos'.$aux.'" style="width: 125px;margin: 20px 30px 20px 20px;position: relative; float: left;"><span style="background:url(https://growing-dusk-1846.herokuapp.com/images/pos'.$aux.'.png) 0 0 no-repeat;width: 43px;height: 76px; position:absolute;top:-8px;left:103px"></span><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="119" height="119" style=""/>';
+					}
+					echo '<p style="position: absolute;text-align: center;width: 115px;margin-left:5px;bottom: 23px;overflow: hidden;height: 15px; text-transform:capitalize; font-size: 13px;"><b>'.utf8_decode($val->username).'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 5px;overflow: hidden;height: 18px;font-size: 12px;font-weight: 600; color: #4a4a4a;">'.$val->marca.' puntos</p></div>';
+				}
+				else{
+					if($val->img != "")
+			  		{
+						echo '<div style="width: 125px;margin: 20px 30px 20px 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="'.$val->img .'" width="119" height="119" style=""/>';
+					 }
+      		 		else
+			  		{
+						echo '<div style="width: 125px;margin: 20px 30px 20px 20px;position: relative; float: left;"><img style="border: 5px solid #fff;border-bottom: 45px solid #fff;-webkit-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1); -moz-box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);box-shadow: 1px 4px 12px rgba(0, 0, 0, 1);" src="http://prod.hooptap.com/media/userprofiles/defranking.jpg" width="119" height="119" style=""/>';
+					}
+					echo '<p style="position: absolute;text-align: center;width: 115px;margin-left:5px;bottom: 23px;overflow: hidden;height: 15px; text-transform:capitalize; font-size: 13px;"><b>'.utf8_decode($val->username).'</b></p><p style="position: absolute;text-align: center;width: 100%;bottom: 5px;overflow: hidden;height: 18px;font-size: 12px;font-weight: 600; color: #4a4a4a;">'.$val->marca.' puntos</p></div>';
+		}}
 ?>
-        </ul>
-        </div>
-       <div style="width: 150px; float: left; margin-left: 20px;">
-        <ul style=" padding-left: 5px;">
-        <?php
-    }
-    $i++;
-
-}
-?>
-
-</ul>
-
-<div style="clear:both;"> </div>
- 
-</div >
+	<div style="clear: both;"></div>
+	</div>
+	<div id="pie"><img src="https://growing-dusk-1846.herokuapp.com/images/pie.jpg" width="784" height="128" /></div> 
+ <div class="fb-comments" data-href="http://growing-dusk-1846.herokuapp.com/rankingII.php" data-num-posts="2" data-width="784"></div>
+ </div>
 </body>
 </html>
