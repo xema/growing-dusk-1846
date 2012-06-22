@@ -38,17 +38,17 @@
 }(document, 'script', 'facebook-jssdk'));</script>
  <div>
  	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera.jpg) 0 0 no-repeat; width:784px; text-align: center;">
-		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/clandestino.png" width="181" height="59" style="margin-top: 14px;" /></div>
+		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/gintapas.png" width="59" height="59" style="margin-top: 14px;" /></div>
 		</div>
 	<div id="informacion" style="background:url(https://growing-dusk-1846.herokuapp.com/images/info.jpg) 0 0 no-repeat; width:784px; height:180px; text-align: center;">
 		<div style="width:425px; height: 131px; margin: 0 auto; font-size: 14px; text-align: left;">
-			<p style="margin-left: 6px;line-height: 18px;padding-top: 18px;">¿Serás tu el ganador de esta semana? Cobeca premia con un cocktail en Clandestino al más rápido en resolver el puzzle. Descárgate Hooptap en tu móvil (app gratuita) disponible en la Apple Store o desde el Market de Android, busca los juegos del Grupo Cobeca y ¡se el más rápido!</b>!</p>
-			<p style="margin-left: 6px;margin-top: 4px;">(El concurso finaliza el 18/06/2012 a las 18:00).</p>
+			<p style="margin-left: 6px;line-height: 18px;padding-top: 18px;">¿Quieres un cocktail gratis en Gin Tapas? Cobeca premia al más rápido en resolver el puzzle. Descárgate Hooptap en tu móvil (app gratuita) disponible en la Apple Store o desde el Market de Android, busca los juegos del Grupo Cobeca y ¡se el más rápido!</p>
+			<p style="margin-left: 6px;margin-top: 4px;">(El concurso finaliza el 28/06/2012 a las 18:00).</p>
 		</div>
 	</div>
 	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
 		<?php 
-			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_fastfast.php?reto_id=471');
+			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_fastfast.php?reto_id=472');
 			$con=json_decode($contents); 
 			
 			if($con->status == 'win')
