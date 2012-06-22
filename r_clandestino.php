@@ -38,7 +38,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
  <div>
  	<div id="cabecera" style="background:url(https://growing-dusk-1846.herokuapp.com/images/cabecera.jpg) 0 0 no-repeat; width:784px; text-align: center;">
-		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/gintapas.png" width="59" height="59" style="margin-top: 14px;" /></div>
+		<div style="height:112px; margin: 0 auto;"><img src="https://growing-dusk-1846.herokuapp.com/images/gintapas.png" width="75" height="75" style="margin-top: 4px;" /></div>
 		</div>
 	<div id="informacion" style="background:url(https://growing-dusk-1846.herokuapp.com/images/info.jpg) 0 0 no-repeat; width:784px; height:180px; text-align: center;">
 		<div style="width:425px; height: 131px; margin: 0 auto; font-size: 14px; text-align: left;">
