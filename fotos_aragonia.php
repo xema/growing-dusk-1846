@@ -48,7 +48,7 @@
 	</div>
 	<div id="ranking" style="background:url(https://growing-dusk-1846.herokuapp.com/images/fondo.jpg) 0 0 repeat-y; width:700px; padding: 0 38px 20px 46px; ">
 		<?php 
-			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?rid=337');
+			$contents = file_get_contents('http://prod.hooptap.com/preview/fb/ranking/list_photo.php?reto_id==337');
 			$con=json_decode($contents); 
 			
 			if($con->status == 'win')
